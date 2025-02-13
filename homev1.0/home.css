@@ -47,6 +47,13 @@ header input{
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
+    cursor: pointer;
+}
+
+.a-lista:hover{
+    text-decoration: underline;
+    opacity: 0.6;
+
 }
 
 /* Resposável por estilizar a lista do header/cabeçalho */
