@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: gold;
+    background-color: #202020;
     padding: 20px;
 }
 
@@ -30,7 +30,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
 }
@@ -46,7 +46,7 @@ section {
 }
 
 .historia, .valores, .equipe {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .valores ul {
@@ -75,12 +75,12 @@ section {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 2px solid gold;
+    border: 2px solid rgb(56, 55, 49);
 }
 
 footer {
-    background-color: gold;
-    color: black;
+    background-color: #202020;
+    color: rgb(255, 255, 255);
     padding: 10px;
     margin-top: 40px;
 }
