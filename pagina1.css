@@ -20,7 +20,7 @@ nav {
 }
     
 nav ul {
-    list-style: none; /*Remove os marcadores de lista (bullet points) do menu.*/
+    list-style: none; /*Remove os marcadores de lista do menu.*/
     display: flex; /*Aplica Flexbox à lista de itens (ul), colocando-os em linha.*/
     gap: 20px; /*Define o espaço de 20px entre cada item do menu.*/
 }
