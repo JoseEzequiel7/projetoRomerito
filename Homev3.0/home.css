@@ -1,0 +1,110 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* Div resposável pelo todo, por conter tudo, por isto 100vh de height */
+.container{
+    height: 100vh;
+    background-color: black;
+}
+
+/* AQUI COMEÇA A ESTILIZAÇÃO DO HEADER*/
+
+/* 
+ O intuito é ter na área do header(cabeçalho) 2 divs.
+ Uma responsável por acomodar a logo da loja e o input que será a barra de pesquisa
+ e outra responsável por acomodar a lista de funções como usuário, compras e etc
+ além de algum anúncio acima meramente ilustrativo.
+*/
+
+/* Resposável por estilizar o cabeçalho em geral */
+header{
+    background-color: gold;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Div resposável por conter a área do input(e talvez a futura foto da logo) */
+.a-input{
+    display: flex;
+    width: 30%;
+    flex-grow: 1; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Responsável por estilizar o input do header/cabeçalho */
+header input{
+    height: 30px;
+    width: 550px;
+    padding: 20px;
+    color: gray;
+}
+
+/* Resposável por estilizar a div 2 do header */
+.a-lista{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+/* Resposável pelo hover da lista da div 2 do header */
+li:hover{
+    text-decoration: underline;
+    opacity: 0.6;
+}
+
+/* Resposável por estilizar a lista do header/cabeçalho */
+header ul{
+    list-style: none;
+    font-family: Arial;
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+/* Responsável por estilizar a logo no header */
+header img{
+    height: 200px;
+}
+
+/* AQUI COMEÇA A ÁREA DO SIDEBAR */
+
+/* Ainda não está tão claro mas nela terá 3 seções(quadrados)
+que ficaram responsáveis por acessar as páginas dos outros jogos. */
+
+/* Responsáevl por estilizar a área logo abaixo do header que irá conter as seções dos jogos */
+.sidebar{
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-around;
+}
+
+/* Responsável por estilizar a área dos cards das sessões dos jogos */
+.cards{
+    display:flex;
+    height: 350px;
+    width: 15%;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Resposável por estilizar as palavras da seções de */
+.sidebar p{
+    color: white;
+}
+
+/* Responsável por fazer a animação ao passar o mouse acima das seções do jogos */
+.cards:hover{
+    box-shadow: 0px 0px 50px gold, 0px 0px 30px #FFD700;
+    width: 18%;
+}
+
+.cards img{
+    height: 80%;
+    width: 100%;
+}
