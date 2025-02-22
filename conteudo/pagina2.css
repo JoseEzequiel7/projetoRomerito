@@ -63,6 +63,26 @@ nav ul li a {
 .game-card img:hover {
     transform: scale(1.1); /*Aumenta a imagem em 10% quando o mouse passa sobre ela.*/
 }
+
+.pagination {
+    text-align: center; /*Centraliza o conteúdo da paginação.*/
+    padding: 20px; /*Adiciona espaçamento interno ao redor da área de paginação.*/
+}
+
+.pagination button {
+    background-color: #333; /*Define a cor de fundo do botão como cinza escuro.*/
+    color: white; /*Define a cor do texto do botão como branco.*/
+    border: none; /*Remove a borda padrão do botão.*/
+    padding: 10px 15px; /*Define o espaçamento interno do botão.*/
+    margin: 5px; /*Adiciona uma margem de 5px ao redor do botão.*/
+    cursor: pointer; /*Muda o cursor para uma mãozinha quando o usuário passa o mouse sobre o botão.*/
+    font-size: 16px; /*Define o tamanho da fonte no botão.*/
+}
+
+button:hover {
+    background-color: lightblue; /* Muda a cor de fundo do botão para azul claro quando o mouse passa sobre ele.*/
+}
+
 footer {
     text-align: center; /*Centraliza o texto dentro do rodapé.*/
     padding: 10px; /*Adiciona espaçamento interno ao redor do rodapé.*/
