@@ -1,57 +1,123 @@
+/* CSS Atualizado */
 body {
-    background-color: black; /* Define o fundo preto */
-    color: white; /* Define a cor do texto como branco */
-    display: flex; /* Usa flexbox para organizar os elementos dentro do corpo da página */
-    justify-content: center; /* Centraliza os elementos horizontalmente */
-    align-items: center; /* Centraliza os elementos verticalmente */
-    height: 100vh; /* Faz com que o copro ocupe toda a altura da tela */
-    margin: 0; /* Remove qualquer margem padrão do navegador */
+    background-color: black;
+    color: white;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    margin-bottom: 15px;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background-color: #111;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover {
+    color: #00ff00;
 }
 
 .container {
-    display: flex; /* Ativa o flexbox */
-    flex-direction: column; /* Organiza os elementos do container verticalmente */
-    align-items: center; /* Centraliza os elementos filhos na horizontal */
-    text-align: center; /* Garante que o texto dos filhos fique centralizado */
-    width: 100%; /* O container ocupa toda a largura disponível */
-    gap: 5px; /* Adiciona um pequeno espaçamento entre os elementos h1 e div dentro do container */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
 }
 
 .box {
-    display: flex; /* Ativa o flexbox */
-    align-items: center; /* Centraliza o conteúdo da box verticalmente */
-    text-align: center; /* Centraliza o texto */
-    font-size: 25px; /* Define o tamanho do texto */
-    border: 1px solid white; /* Cria uma borda branca ao redor da box */
-    padding: 5px; /* Adiciona um pequeno espaçamento interno */
-    width: 50%; /* Define que a box ocupa 50% da largura da tela */
-    flex-direction: column; /* Os elementos dentro da box ficam empilhados verticalmente */
-    margin: 0; /* Remove margens extras */
-}
-
-h1 {
-    font-size: 35px; /* Apenas aumenta o tamanho do titulo */
-}
-
-ul {
-    list-style: none; /* Remove os marcadores da lista ul */
-}
-
-.redes {
-    text-decoration: none; /* Remove qualquer sublinhado dos links */
-    font-weight: bold; /* Deixa os textos mais grossos */
-    transition: transform 0.2s; /* Adiciona um efeito suave nas animações */
+    border: 1px solid white;
+    padding: 25px;
+    width: 50%;
+    max-width: 800px;
+    margin: 20px 0;
+    line-height: 1.6;
 }
 
 .redes ul {
-    display: flex; /* faz com que os elementos da lista estejam alinhados na mesma linha (horizontalmente)   */ 
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+    margin-top: 30px;
 }
 
-.redes ul a {
-    display: block; /* Garante que os links ocupem todo o espaço disponível */
-    padding: 20px; /* Adiciona um espaçamento interno ao redor dos ícones */
+.redes img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
 }
 
-.redes a:hover {
-    transform: scale(1.2); /* Quando o usuário passar o mouse por cima do icone seu tamanho aumentará em 20% */
+.redes img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .redes ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .sidebar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .redes img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 16px;
+    }
+    
+    .box {
+        width: 95%;
+    }
+    
+    .logo img {
+        height: 60px;
+    }
 }
