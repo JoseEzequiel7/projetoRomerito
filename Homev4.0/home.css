@@ -1,0 +1,148 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* Div responsável pelo todo, por conter tudo, por isto 100vh de height */
+.container{
+    height: 100vh;
+    background-color: black;
+}
+
+/* AQUI COMEÇA A ESTILIZAÇÃO DO HEADER*/
+
+/* 
+ O intuito é ter na área do header(cabeçalho) 2 divs.
+ Uma responsável por acomodar a logo da loja e o input que será a barra de pesquisa
+ e outra responsável por acomodar a lista de funções como usuário, compras e etc
+ além de algum anúncio acima meramente ilustrativo.
+*/
+
+/* Resposável por estilizar o cabeçalho em geral */
+header{
+    background-color: gold;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Div resposável por conter a área do input(e talvez a futura foto da logo) */
+.a-input{
+    display: flex;
+    width: 40%;
+    flex-grow: 1; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Responsável por estilizar a logo no header */
+.a-input img{
+    height: 200px;
+}
+
+/* Responsável por estilizar o input do header/cabeçalho */
+header input{
+    height: 30px;
+    width: 550px;
+    padding: 20px;
+    color: gray;
+}
+
+/* Estilizar lista abaixo do input */
+.a-input ul{
+    position: fixed;
+    top: 80px; 
+    left: 245px;
+    font-size: 15px;
+}
+
+/* Somente para coloca um padding na lista abaixo do input*/
+.a-input ul li{
+    padding-right: 5px;
+}
+
+/* Resposável por estilizar a div 2 do header */
+.a-lista{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Responsável pela foto do anúncio do header */
+#foto_anuncio{
+    height: 50px;
+    width: 200px;
+    border-radius: 50px;
+    margin-right: 90px;
+}
+
+/* Responsável pela foto do carrinho na área da lista logo abaixo da foto do anúncio */
+li img{
+    height: 20px;
+}
+
+/* Resposável pelo hover da lista da div 2 do header */
+.a-lista li:hover{
+    text-decoration: underline;
+    opacity: 0.6;
+}
+
+/* Resposável por estilizar a lista do header/cabeçalho */
+header ul{
+    position: fixed;
+    top: 80px;
+    left: 1055px; 
+    list-style: none;
+    font-family: Arial;
+    display: flex;
+    gap: 10px;
+}
+
+/* AQUI COMEÇA A ÁREA DO SIDEBAR */
+
+/* Ainda não está tão claro mas nela terá 3 seções(quadrados)
+que ficaram responsáveis por acessar as páginas dos outros jogos. */
+
+/* Responsáevl por estilizar a área logo abaixo do header que irá conter as seções dos jogos */
+.sidebar{
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-around;
+    /* background: linear-gradient(to bottom, gold, rgba(0, 0, 0, 0.8), black); */
+}
+
+/* Responsável por estilizar a área dos cards das sessões dos jogos */
+.cards{
+    display:flex;
+    height: 230px;
+    width: 15%;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Resposável por estilizar as palavras da seções de */
+.sidebar p{
+    color: white;
+}
+
+/* Responsável por fazer a animação ao passar o mouse acima das seções do jogos */
+.cards:hover{
+    box-shadow: 0px 0px 50px gold, 0px 0px 30px #FFD700;
+}
+
+/* Responsável por estilizar a imagem dos cards */
+.cards img{
+    height: 80%;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #202020;
+    margin-top: 230px; 
+}
