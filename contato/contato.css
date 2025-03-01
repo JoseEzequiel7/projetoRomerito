@@ -82,7 +82,7 @@ footer {
     margin-top: auto;
 }
 
-/* Responsividade */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
     .box {
         width: 90%;

@@ -173,3 +173,46 @@ footer {
     color: white;
     margin-top: 230px; 
 }
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 600px) {
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .a-input img {
+        height: 60px;
+    }
+
+    header input {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .a-lista {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sidebar {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .cards {
+        width: 100%;
+        height: auto;
+    }
+
+    .cards img {
+        height: 150px;
+    }
+
+    footer {
+        margin-top: 100px;
+    }
+}
