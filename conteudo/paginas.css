@@ -3,8 +3,7 @@ body {
     font-family: Arial, sans-serif; /*Define a fonte do corpo da página como Arial (ou uma fonte genérica sans-serif, caso não tenha Arial).*/
     background-color: #121212; /*Define a cor de fundo da página como um tom escuro de cinza/pretinho.*/
     color: white; /*Define a cor do texto para branco.*/
-    font-family: Arial, Sans-serif;
- }
+}
 
 header {
     display: flex; /*Usa Flexbox para o layout no header, permitindo que os itens dentro dele sejam alinhados facilmente.*/
@@ -64,6 +63,10 @@ nav ul li a {
     transform: scale(1.1); /*Aumenta a imagem em 10% quando o mouse passa sobre ela.*/
 }
 
+button:hover {
+    background-color: lightblue; /* Muda a cor de fundo do botão para azul claro quando o mouse passa sobre ele.*/
+}
+
 .pagination {
     text-align: center; /*Centraliza o conteúdo da paginação.*/
     padding: 20px; /*Adiciona espaçamento interno ao redor da área de paginação.*/
@@ -87,4 +90,57 @@ footer {
     text-align: center; /*Centraliza o texto dentro do rodapé.*/
     padding: 10px; /*Adiciona espaçamento interno ao redor do rodapé.*/
     background-color: #202020; /*Define a cor de fundo do rodapé como cinza escuro.*/
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .games-list {
+        padding: 30px;
+    }
+
+    .games {
+        gap: 20px;
+    }
+
+    .game-card {
+        flex: 1 1 250px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .games {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .boasvindas {
+        height: auto;
+        padding: 15px;
+    }
+
+    .game-card {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
 }

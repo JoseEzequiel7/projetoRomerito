@@ -108,25 +108,49 @@ header ul{
 que ficaram responsáveis por acessar as páginas dos outros jogos. */
 
 /* Responsáevl por estilizar a área logo abaixo do header que irá conter as seções dos jogos */
-.sidebar{
+.sidebar {
+    padding-top: 60px;
     display: flex;
-    padding-top: 100px;
-    justify-content: space-around;
-    /* background: linear-gradient(to bottom, gold, rgba(0, 0, 0, 0.8), black); */
+    justify-content: center;
+    gap: 20px; /* Espaço entre os cards */
 }
+
+
+.sidebar a {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Garante que o link ocupa todo o card */
+}
+
+.sidebar .cards {
+    transition: transform 0.3s ease;
+}
+
+.sidebar .cards:hover {
+    transform: scale(1.05);
+}
+
 
 /* Responsável por estilizar a área dos cards das sessões dos jogos */
-.cards{
-    display:flex;
-    height: 230px;
-    width: 15%;
+.cards {
+    width: 250px; /* Largura fixa para todos os cards */
+    height: 300px; /* Altura fixa para todos os cards */
+    display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
+    background-color: #111; /* Cor de fundo para destacar */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
 }
 
+
 /* Resposável por estilizar as palavras da seções de */
-.sidebar p{
+.cards p {
     color: white;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 /* Responsável por fazer a animação ao passar o mouse acima das seções do jogos */
@@ -135,14 +159,17 @@ que ficaram responsáveis por acessar as páginas dos outros jogos. */
 }
 
 /* Responsável por estilizar a imagem dos cards */
-.cards img{
-    height: 80%;
-    width: 100%;
+.cards img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    height: 200px; /* Define uma altura fixa para as imagens */
+    object-fit: cover; /* Mantém a proporção da imagem e a ajusta ao espaço */
+    border-radius: 5px;
 }
 
 footer {
     text-align: center;
     padding: 10px;
     background-color: #202020;
+    color: white;
     margin-top: 230px; 
 }

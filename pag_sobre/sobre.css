@@ -67,6 +67,9 @@ section {
 
 .membro {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente */
 }
 
 .membro img {
@@ -75,6 +78,7 @@ section {
     border-radius: 50%;
     border: 2px solid rgb(56, 55, 49);
 }
+
 
 footer {
     background-color: #202020;
