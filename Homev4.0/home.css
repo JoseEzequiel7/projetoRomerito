@@ -1,25 +1,18 @@
-body{
+/* Reset de margens e preenchimentos padrão */
+body {
     padding: 0;
     margin: 0;
 }
 
-/* Div responsável pelo todo, por conter tudo, por isto 100vh de height */
-.container{
-    height: 100vh;
+/* Container principal */
+.container {
+    min-height: 100vh;
     background-color: black;
+    overflow: hidden; /* Evita espaços extras ao aumentar o zoom */
 }
 
-/* AQUI COMEÇA A ESTILIZAÇÃO DO HEADER*/
-
-/* 
- O intuito é ter na área do header(cabeçalho) 2 divs.
- Uma responsável por acomodar a logo da loja e o input que será a barra de pesquisa
- e outra responsável por acomodar a lista de funções como usuário, compras e etc
- além de algum anúncio acima meramente ilustrativo.
-*/
-
-/* Resposável por estilizar o cabeçalho em geral */
-header{
+/* Estilização do cabeçalho */
+header {
     background-color: gold;
     height: 120px;
     width: 100%;
@@ -27,43 +20,43 @@ header{
     align-items: center;
 }
 
-/* Div resposável por conter a área do input(e talvez a futura foto da logo) */
-.a-input{
+/* Área do input e logo */
+.a-input {
     display: flex;
     width: 40%;
-    flex-grow: 1; 
+    flex-grow: 1;
     align-items: center;
     justify-content: space-between;
 }
 
-/* Responsável por estilizar a logo no header */
-.a-input img{
+/* Estilização da logo */
+.a-input img {
     height: 200px;
 }
 
-/* Responsável por estilizar o input do header/cabeçalho */
-header input{
+/* Barra de pesquisa */
+header input {
     height: 30px;
     width: 550px;
     padding: 20px;
     color: gray;
 }
 
-/* Estilizar lista abaixo do input */
-.a-input ul{
+/* Lista abaixo do input */
+.a-input ul {
     position: fixed;
-    top: 80px; 
+    top: 80px;
     left: 245px;
     font-size: 15px;
 }
 
-/* Somente para coloca um padding na lista abaixo do input*/
-.a-input ul li{
+/* Itens da lista */
+.a-input ul li {
     padding-right: 5px;
 }
 
-/* Resposável por estilizar a div 2 do header */
-.a-lista{
+/* Área da lista de ícones no cabeçalho */
+.a-lista {
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
@@ -72,56 +65,53 @@ header input{
     align-items: flex-end;
 }
 
-/* Responsável pela foto do anúncio do header */
-#foto_anuncio{
+/* Foto do anúncio */
+#foto_anuncio {
     height: 50px;
     width: 200px;
     border-radius: 50px;
     margin-right: 90px;
 }
 
-/* Responsável pela foto do carrinho na área da lista logo abaixo da foto do anúncio */
-li img{
+/* Ícone do carrinho */
+li img {
     height: 20px;
 }
 
-/* Resposável pelo hover da lista da div 2 do header */
-.a-lista li:hover{
+/* Efeito hover na lista */
+.a-lista li:hover {
     text-decoration: underline;
     opacity: 0.6;
 }
 
-/* Resposável por estilizar a lista do header/cabeçalho */
-header ul{
+/* Lista de navegação */
+header ul {
     position: fixed;
     top: 80px;
-    left: 1055px; 
+    left: 1055px;
     list-style: none;
     font-family: Arial;
     display: flex;
     gap: 10px;
 }
 
-/* AQUI COMEÇA A ÁREA DO SIDEBAR */
-
-/* Ainda não está tão claro mas nela terá 3 seções(quadrados)
-que ficaram responsáveis por acessar as páginas dos outros jogos. */
-
-/* Responsáevl por estilizar a área logo abaixo do header que irá conter as seções dos jogos */
+/* Sidebar */
 .sidebar {
     padding-top: 60px;
     display: flex;
     justify-content: center;
     gap: 20px; /* Espaço entre os cards */
+    background-color: black; /* Evita espaços brancos */
 }
 
-
+/* Links dos cards */
 .sidebar a {
     text-decoration: none;
     color: inherit;
-    display: block; /* Garante que o link ocupa todo o card */
+    display: block;
 }
 
+/* Efeito hover nos cards */
 .sidebar .cards {
     transition: transform 0.3s ease;
 }
@@ -130,52 +120,51 @@ que ficaram responsáveis por acessar as páginas dos outros jogos. */
     transform: scale(1.05);
 }
 
-
-/* Responsável por estilizar a área dos cards das sessões dos jogos */
+/* Estilização dos cards */
 .cards {
-    width: 250px; /* Largura fixa para todos os cards */
-    height: 300px; /* Altura fixa para todos os cards */
+    width: 250px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #111; /* Cor de fundo para destacar */
+    background-color: #111;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    overflow: hidden; /* Previne espaços extras */
 }
 
-
-/* Resposável por estilizar as palavras da seções de */
+/* Texto dentro dos cards */
 .cards p {
     color: white;
     font-weight: bold;
     margin-top: 10px;
 }
 
-/* Responsável por fazer a animação ao passar o mouse acima das seções do jogos */
-.cards:hover{
+/* Animação de hover nos cards */
+.cards:hover {
     box-shadow: 0px 0px 50px gold, 0px 0px 30px #FFD700;
 }
 
-/* Responsável por estilizar a imagem dos cards */
+/* Imagens dos cards */
 .cards img {
-    width: 100%; /* Faz a imagem ocupar toda a largura do card */
-    height: 200px; /* Define uma altura fixa para as imagens */
-    object-fit: cover; /* Mantém a proporção da imagem e a ajusta ao espaço */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 5px;
 }
 
+/* Rodapé */
 footer {
     text-align: center;
     padding: 10px;
     background-color: #202020;
     color: white;
-    margin-top: 230px; 
+    margin-top: 230px;
 }
 
-/* RESPONSIVIDADE */
-
+/* Responsividade */
 @media screen and (max-width: 600px) {
     header {
         height: auto;
@@ -205,6 +194,7 @@ footer {
 
     .cards {
         width: 100%;
+        flex-direction: column;
         height: auto;
     }
 
@@ -213,6 +203,6 @@ footer {
     }
 
     footer {
-        margin-top: 100px;
+        margin-top: 200px;
     }
 }
