@@ -61,4 +61,4 @@
 * ┃  ┣ 📜 sobre.css
 * ┣ 📜 README.md
 
-**Espero que tenha gostado 😁!! 
+**Espero que tenha gostado 😁!!**
