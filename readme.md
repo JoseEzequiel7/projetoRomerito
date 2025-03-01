@@ -15,7 +15,7 @@
 ### 🛠️ Tecnologias Utilizadas:
   * **Linguangens:** HTML E CSS
   * **Outras Ferramentas:** Git, GitHub e Vscode. 
-  *
+  
 
 ### 🚀 Como navegar pelo projeto:
   Acesse primeiro a pasta *loginv2.0* e vá navegando que será redirecionado para as outras páginas.
